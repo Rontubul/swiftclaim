@@ -33,8 +33,9 @@ export default function Home() {
         </span>
         <div className="flex items-center gap-6 text-sm text-white/60">
           <a href="#how-it-works" className="hover:text-white transition-colors">How it works</a>
-          <a href="#states" className="hover:text-white transition-colors">States</a>
-          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
+          <a href="/claims" className="hover:text-white transition-colors">Claim Types</a>
+          <a href="/states" className="hover:text-white transition-colors">States</a>
+          <a href="/faq" className="hover:text-white transition-colors">FAQ</a>
           <Link href="/start" className="px-5 py-2 rounded-full text-navy-900 font-semibold text-sm" style={{background: 'linear-gradient(135deg, #f0c040, #e6ac20)'}}>
             Start a Claim
           </Link>
