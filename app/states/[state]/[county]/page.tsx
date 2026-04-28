@@ -1,5 +1,6 @@
 import { STATES, getState, getCounty } from '@/lib/states-data'
 import Link from 'next/link'
+import Nav from '@/components/Nav'
 import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {
@@ -29,10 +30,7 @@ export default function CountyPage({ params }: { params: { state: string; county
 
   return (
     <main className="min-h-screen" style={{ background: '#0a0e1a' }}>
-      <nav className="flex items-center justify-between px-8 py-5" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-        <Link href="/" className="font-display text-xl font-bold">Swift<span style={{ color: '#f0c040' }}>Claim</span></Link>
-        <Link href="/start" className="px-5 py-2 rounded-full text-sm font-semibold" style={{ background: 'linear-gradient(135deg, #f0c040, #e6ac20)', color: '#0a0e1a' }}>Start a Claim</Link>
-      </nav>
+      <Nav />
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         {/* Breadcrumb */}
